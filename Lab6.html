@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макаревич Виктория — бизнес/системный аналитик</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Lab6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- НАВИГАЦИОННОЕ МЕНЮ -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+        
+        <!-- Меню должно быть ДО кнопки для правильного порядка -->
+        <ul class="navbar-menu">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#achievements">Достижения</a></li>
+            <li><a href="#tools">Инструменты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#feedback">Обратная связь</a></li> 
+        </ul>
+        
+        <!-- ИЗМЕНЕННАЯ КНОПКА БУРГЕРА -->
+        <button class="navbar-toggle" id="mobile-menu-toggle">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </div>
+</nav>
+
+    <!-- HERO СЕКЦИЯ -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="img/img2.jpeg" alt="Фоновое изображение портфолио">
+        </div>
+        <div class="hero-content">
+            <h1>Макаревич Виктория</h1>
+            <h2>Business & System Analyst</h2>
+            <p>Моя цель - сделать продукт точным отражением потребностей клиента. Специализируюсь на анализе требований и построении эффективной коммуникации между заказчиками и командами разработки.</p>
+            <a href="#contact" class="cta-button">Связаться со мной</a>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ "ОБО МНЕ" -->
+    <section class="about" id="about">
+        <div class="about-background">
+        </div>
+        <div class="about-overlay"></div>
+        <div class="about-content">
+            <h2 class="section-heading">Обо мне</h2>
+            <div class="text-container">
+                <p class="about-text">
+                    Мое профессиональное самоопределение началось в школе, а завершилось открытием бизнес-анализа 
+    как идеального сочетания моих интересов и способностей. Пройдя через изучение различных IT-специальностей, 
+    я осознала, что все дороги вели именно сюда. Сегодня я с уверенностью могу сказать: 
+    это та самая работа, от которой горят глаза и радуется сердце.
+                </p>
+            </div>
+        </div>
+    </section>
+
+        <!-- СЕКЦИЯ "МОИ ДОСТИЖЕНИЯ" -->
+<section class="achievements" id="achievements">
+    <div class="achievements-background">
+        <img src="img/job.jpg" alt="Фон секции достижений">
+    </div>
+    <div class="achievements-overlay"></div>
+    <div class="achievements-container">
+        <h2 class="section-heading">Мои достижения</h2>
+        <div class="achievements-grid">
+            <!-- СЕРТИФИКАТЫ-->
+            <div class="achievement-card detailed-card">
+                <div class="achievement-image">
+                    <img src="img/CertificateBA.jpg" alt="Сертификат бизнес-аналитика" data-images='["img/CertificateBA.jpg"]'>
+                </div>
+                <div class="achievement-info">
+                    <h3 class="achievement-title">Профессиональный путь</h3>
+                    <div class="achievement-details">
+                        <div class="achievement-chips">
+                            <span class="chip">2025</span>
+                            <span class="chip">ITMINE</span>
+                            <span class="chip">Бизнес-анализ</span>
+                            <span class="chip">Сертификация</span>
+                        </div>
+                        <p class="achievement-description">
+                            Прошла комплексное обучение от основ бизнес-анализа до продвинутых методик управления требованиями. 
+                            Освоила полный цикл работы аналитика: от выявления потребностей заказчика до формализации требований 
+                            и создания проектной документации.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-card detailed-card">
+                <div class="achievement-image">
+                    <img src="img/SU&IT.jpg" alt="Сертификат волонтерства" data-images='["img/SU&IT.jpg"]'>
+                </div>
+                <div class="achievement-info">
+                    <h3 class="achievement-title">Волонтерская деятельность SU&IT</h3>
+                    <div class="achievement-details">
+                        <div class="achievement-chips">
+                            <span class="chip">2024</span>
+                            <span class="chip">SU&IT</span>
+                            <span class="chip">Волонтерство</span>
+                            <span class="chip">Сообщество</span>
+                        </div>
+                        <p class="achievement-description">
+                            Активное участие в IT-сообществе, организация мероприятий и поддержка образовательных инициатив. 
+                            Развитие soft skills через волонтерскую деятельность в сфере технологий.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-card detailed-card">
+                <div class="achievement-image">
+                    <img src="img/it_space.jpg" alt="Сертификат участника форума" data-images='["img/it_space.jpg"]'>
+                </div>
+                <div class="achievement-info">
+                    <h3 class="achievement-title">Участие в IT-форуме</h3>
+                    <div class="achievement-details">
+                        <div class="achievement-chips">
+                            <span class="chip">2025</span>
+                            <span class="chip">IT-space</span>
+                            <span class="chip">Конференция</span>
+                            <span class="chip">Networking</span>
+                        </div>
+                        <p class="achievement-description">
+                            Участие в крупнейшем IT-форуме, обмен опытом с профессионалами отрасли, 
+                            изучение современных трендов в бизнес-анализе и управлении проектами.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="achievement-card detailed-card">
+                <div class="achievement-image" data-multiple="true">
+                    <div class="multi-image-indicator">
+                        <i class="fas fa-images"></i> Галерея
+                    </div>
+                    <img src="img/CRM.jpeg" alt="MCS система" data-images='["img/CRM.jpeg", "img/doc1.jpg", "img/doc2.jpg", "img/doc3.jpg", "img/doc4.jpg"]'>
+                </div>
+                <div class="achievement-info">
+                    <h3 class="achievement-title">Система Management Control System</h3>
+                    <div class="achievement-details">
+                        <div class="achievement-chips">
+                            <span class="chip">2024</span>
+                            <span class="chip">MCS</span>
+                            <span class="chip">Производительность +40%</span>
+                        </div>
+                        <p class="achievement-description">
+                            Разработка комплексной системы управления отчетами и отчетностью предприятия. 
+                            Полный цикл от анализа требований до внедрения и документации.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-card detailed-card">
+                <div class="achievement-image" data-multiple="true">
+                    <div class="multi-image-indicator">
+                        <i class="fas fa-images"></i> Галерея
+                    </div>
+                    <img src="img/Prototype1.jpeg" alt="Прототипы" data-images='["img/Prototype1.jpeg","img/maket2.jpg", "img/maket3.jpg", "img/maket4.jpg", "img/maket5.jpg"]'>
+                </div>
+                <div class="achievement-info">
+                    <h3 class="achievement-title">Проектирование интерфейсов</h3>
+                    <div class="achievement-details">
+                        <div class="achievement-chips">
+                            <span class="chip">2024</span>
+                            <span class="chip">Figma</span>
+                            <span class="chip">Draw.io</span>
+                            <span class="chip">Прототипирование</span>
+                        </div>
+                        <p class="achievement-description">
+                            Создание полного набора прототипов, мокапов, вайерфреймов для визуализации структуры разрабатываемого продукта и его наполнения.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-card detailed-card">
+                <div class="achievement-image">
+                    <img src="img/DCat.jpeg" alt="Интеграция каталога" data-images='["img/DCat.jpeg"]'>
+                </div>
+                <div class="achievement-info">
+                    <h3 class="achievement-title">Интеграция европейского каталога</h3>
+                    <div class="achievement-details">
+                        <div class="achievement-chips">
+                            <span class="chip">2024</span>
+                            <span class="chip">E-commerce</span>
+                            <span class="chip">Интеграция</span>
+                            <span class="chip">Рынок +60%</span>
+                        </div>
+                        <p class="achievement-description">
+                            Интеграция системы европейского каталога продуктов с e-commerce платформой компании, 
+                            что позволило значительно расширить охват рынка.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-card detailed-card">
+                <div class="achievement-image" data-multiple="true">
+                    <div class="multi-image-indicator">
+                        <i class="fas fa-images"></i> Галерея
+                    </div>
+                    <img src="img/milashki.jpg" alt="PM команды" data-images='["img/milashki.jpg", "img/milashki2.jpg"]'>
+                </div>
+                <div class="achievement-info">
+                    <h3 class="achievement-title">Управление проектом обучения</h3>
+                    <div class="achievement-details">
+                        <div class="achievement-chips">
+                            <span class="chip">2024</span>
+                            <span class="chip">Project Management</span>
+                            <span class="chip">Образование</span>
+                            <span class="chip">Команда</span>
+                        </div>
+                        <p class="achievement-description">
+                            Управление кросс-функциональной командой по модернизации учебного курса. 
+                            Создание user-friendly интерфейса с обновленным контентом.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 8 -->
+<div class="achievement-card detailed-card">
+    <div class="achievement-image">
+        <img src="img/armtek.jpeg" alt="Мобильное приложение ARMTEK" data-images='["img/armtek.jpeg"]'>
+    </div>
+    <div class="achievement-info">
+        <h3 class="achievement-title">Разработка мобильного приложения</h3>
+        <div class="achievement-details">
+            <div class="achievement-chips">
+                <span class="chip">2025</span>
+                <span class="chip">ARMTEK</span>
+                <span class="chip">Мобильная разработка</span>
+            </div>
+            <p class="achievement-description">
+                Создание конкурентоспособного мобильного приложения с расширенным функционалом 
+                для логистики и доставки. Аналог современных решений Яндекс и СДЭК.
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+
+        <!-- СЕКЦИЯ "ИНСТРУМЕНТЫ И ТЕХНОЛОГИИ" -->
+   <section class="tools" id="tools">
+    <div class="tools-overlay"></div>
+    <div class="tools-container">
+        <h2 class="section-heading">Инструменты и технологии</h2>
+        <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="https://img.icons8.com/?size=100&id=pGHcje298xSl&format=png&color=000000" alt="MS Word">
+                    </div>
+                    <h3 class="tool-name">MS Word</h3>
+                    <p class="tool-description">Создание документации требований, функциональных спецификаций и пользовательских инструкций</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                         <img src="https://img.icons8.com/?size=100&id=UECmBSgBOvPT&format=png&color=000000" alt="Excel">
+                    </div>
+                    <h3 class="tool-name">MS Excel</h3>
+                    <p class="tool-description">Анализ данных, создание отчетов, построение диаграмм и работа с бизнес-метриками</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="img/draw.io.png" alt="Draw.io">
+                    </div>
+                    <h3 class="tool-name">Draw.io</h3>
+                    <p class="tool-description">Проектирование бизнес-процессов, создание блок-схем и диаграмм последовательности</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="https://img.icons8.com/?size=100&id=RFQgC8NwC8ij&format=png&color=000000" alt="Visio">
+                    </div>
+                    <h3 class="tool-name">Visio</h3>
+                    <p class="tool-description">Разработка сложных архитектурных диаграмм и UML-моделей</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="img/postman.png" alt="Postman">
+                    </div>
+                    <h3 class="tool-name">Postman</h3>
+                    <p class="tool-description">Тестирование API, документация endpoints и валидация ответов сервера</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="https://img.icons8.com/color/70/cloud-function.png" alt="Swagger">
+                    </div>
+                    <h3 class="tool-name">Swagger</h3>
+                    <p class="tool-description">Документирование REST API, спецификация endpoints и взаимодействие с разработчиками</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="img/rabbitmq.svg" alt="RabbitMQ">
+                    </div>
+                    <h3 class="tool-name">RabbitMQ</h3>
+                    <p class="tool-description">Проектирование асинхронных взаимодействий между микросервисами</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="https://img.icons8.com/?size=100&id=fOhLNqGJsUbJ&format=png&color=000000" alt="Kafka">
+                    </div>
+                    <h3 class="tool-name">Kafka</h3>
+                    <p class="tool-description">Обработка потоковых данных в реальном времени с высокой пропускной способностью и низкой задержкой</p>
+                </div> 
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" alt="Figma">
+                    </div>
+                    <h3 class="tool-name">Figma</h3>
+                    <p class="tool-description">Создание интерактивных прототипов, макетов и wireframes интерфейсов</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="img/axure.svg" alt="Axure">
+                    </div>
+                    <h3 class="tool-name">Axure</h3>
+                    <p class="tool-description">Создание сложных интерактивных прототипов с динамическим контентом</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="img/balsamiq.png" alt="Balsamiq">
+                    </div>
+                    <h3 class="tool-name">Balsamiq</h3>
+                    <p class="tool-description">Быстрое прототипирование макетов для валидации концепций</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="img/bitrix.svg" alt="1C-Bitrix">
+                    </div>
+                    <h3 class="tool-name">1C-Bitrix</h3>
+                    <p class="tool-description">Создание и развитие различных веб-проектов, таких как интернет-магазины, корпоративные сайты и информационные порталы</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                         <img src="img/sap1.svg" alt="SAP">
+                    </div>
+                    <h3 class="tool-name">SAP</h3>
+                    <p class="tool-description">Автоматизация и оптимизация бизнес-процессов. Объединение данных из разных отделов в единое информационное пространство </p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="img/confluence.svg" alt="Confluence">
+                    </div>
+                    <h3 class="tool-name">Confluence</h3>
+                    <p class="tool-description">Платформа для совместной работы и управления знаниями</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ "КОНТАКТЫ" -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-heading">Свяжитесь со мной</h2>
+            
+            <p class="contact-description">
+                Я всегда открыта для обсуждения новых проектов, творческих идей или возможностей стать частью вашего видения
+            </p>
+
+           
+            <div class="contact-buttons">
+                <a href="https://www.linkedin.com/in/viktoria-makarevich-a52036301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="contact-button linkedin-button">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+
+                <a href="https://drive.google.com/file/d/1XGyqhu7e4VE7uVUVSgfjdTQmZkuOoTBy/view?usp=sharing" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="contact-button cv-button">
+                    <i class="fas fa-download"></i>
+                    Скачать резюме
+                </a>
+
+                <a href="#feedback" 
+                    class="contact-button feedback-button">
+                    <i class="fas fa-comment-alt"></i>
+                    Оставить отзыв
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- СЕКЦИЯ "ОБРАТНАЯ СВЯЗЬ" -->
+    <section class="feedback" id="feedback">
+        <div class="feedback-container">
+            <h2 class="section-heading">Обратная связь</h2>
+            
+            <p class="feedback-description">
+                Поделитесь своими впечатлениями о моем портфолио или оставьте предложения по сотрудничеству
+            </p>
+
+            <form id="feedbackForm" class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя *</label>
+                    <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Ваш отзыв или предложение..."></textarea>
+                </div>
+
+                <div class="form-group rating-group">
+                    <label>Оценка портфолио</label>
+                    <div class="rating-stars">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★</label>
+                        
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+                        
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+                        
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+                        
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="permission" name="permission" required>
+                    <label for="permission">
+                        Я даю согласие на обработку моих персональных данных *
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    <i class="fas fa-paper-plane"></i> Отправить отзыв
+                </button>
+
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+   <footer class="footer">
+    <div class="footer-logo">
+        <img src="img/logo.png" alt="Логотип">
+    </div>
+    <p>© 2025 Макаревич Виктория | Business & System Analyst</p>
+</footer>
+
+    <!-- Оверлей для просмотра изображений (как в Telegram) -->
+    <div id="imageOverlay" class="image-overlay">
+        <div class="overlay-content">
+            <span class="overlay-close">&times;</span>
+            <img id="overlayImage" src="" alt="">
+            <div class="image-navigation">
+                <button class="nav-btn prev-btn">‹</button>
+                <span id="imageCounter" class="image-counter">1 / 3</span>
+                <button class="nav-btn next-btn">›</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Навигационное меню для мобильных устройств
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+        
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+
+        // Закрытие меню при клике на ссылку
+        const navbarLinks = document.querySelectorAll('.navbar-menu a');
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbarMenu.classList.contains('active')) {
+                    navbarMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Галерея изображений (как в Telegram)
+        const overlay = document.getElementById("imageOverlay");
+        const overlayImg = document.getElementById("overlayImage");
+        const overlayClose = document.querySelector(".overlay-close");
+        const prevBtn = document.querySelector(".prev-btn");
+        const nextBtn = document.querySelector(".next-btn");
+        const imageCounter = document.getElementById("imageCounter");
+
+        let currentImages = [];
+        let currentIndex = 0;
+
+        // Добавляем обработчики клика на изображения достижений
+        document.querySelectorAll('.achievement-image img').forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function() {
+                const imagesData = this.getAttribute('data-images');
+                if (imagesData) {
+                    currentImages = JSON.parse(imagesData);
+                    currentIndex = 0;
+                    showOverlayImage(currentIndex);
+                    overlay.style.display = "flex";
+                    document.body.style.overflow = "hidden"; // Блокируем скролл страницы
+                }
+            });
+        });
+
+        function showOverlayImage(index) {
+            if (currentImages.length > 0) {
+                overlayImg.src = currentImages[index];
+                imageCounter.textContent = `${index + 1} / ${currentImages.length}`;
+                
+                // Показываем/скрываем кнопки навигации
+                prevBtn.style.display = currentImages.length > 1 ? 'block' : 'none';
+                nextBtn.style.display = currentImages.length > 1 ? 'block' : 'none';
+                imageCounter.style.display = currentImages.length > 1 ? 'block' : 'none';
+            }
+        }
+
+        // Закрытие оверлея
+        overlayClose.addEventListener('click', function() {
+            overlay.style.display = "none";
+            document.body.style.overflow = "auto"; // Возвращаем скролл
+        });
+
+        // Закрытие оверлея при клике на затемненную область
+        overlay.addEventListener('click', function(event) {
+            if (event.target === overlay) {
+                overlay.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        });
+
+        // Навигация по изображениям
+        prevBtn.addEventListener('click', function(event) {
+            event.stopPropagation();
+            if (currentImages.length > 0) {
+                currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+                showOverlayImage(currentIndex);
+            }
+        });
+
+        nextBtn.addEventListener('click', function(event) {
+            event.stopPropagation();
+            if (currentImages.length > 0) {
+                currentIndex = (currentIndex + 1) % currentImages.length;
+                showOverlayImage(currentIndex);
+            }
+        });
+
+        // Навигация с помощью клавиатуры
+        document.addEventListener('keydown', function(event) {
+            if (overlay.style.display === "flex") {
+                if (event.key === "Escape") {
+                    overlay.style.display = "none";
+                    document.body.style.overflow = "auto";
+                }
+                if (event.key === "ArrowLeft") {
+                    prevBtn.click();
+                }
+                if (event.key === "ArrowRight") {
+                    nextBtn.click();
+                }
+            }
+        });
+
+        // Анимация появления элементов при скролле
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Наблюдаем за карточками достижений и инструментов
+        document.addEventListener('DOMContentLoaded', () => {
+            const achievementCards = document.querySelectorAll('.achievement-card');
+            const toolCards = document.querySelectorAll('.tool-card');
+            
+            achievementCards.forEach(card => {
+                observer.observe(card);
+            });
+            
+            toolCards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+
+        // Изменение навигации при скролле
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+                // Форма обратной связи с getform.io
+        const feedbackForm = document.getElementById('feedbackForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        // ЗАМЕНИТЕ ЭТОТ URL НА ВАШ ENDPOINT С GETFORM.IO
+        const FORM_ENDPOINT = 'https://getform.io/f/azyqwpyb';
+        
+        feedbackForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Получаем данные формы
+            const formData = new FormData(feedbackForm);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                message: formData.get('message'),
+                rating: formData.get('rating') || 'Не указана',
+                timestamp: new Date().toLocaleString('ru-RU'),
+                page: 'Portfolio Page'
+            };
+            
+            // Валидация
+            if (!data.name || !data.email || !data.message) {
+                showMessage('Пожалуйста, заполните все обязательные поля', 'error');
+                return;
+            }
+            
+            if (!document.getElementById('permission').checked) {
+                showMessage('Необходимо дать согласие на обработку данных', 'error');
+                return;
+            }
+            
+            // Отправка данных
+            try {
+                showMessage('Отправка отзыва...', 'loading');
+                
+                const submitButton = feedbackForm.querySelector('.submit-button');
+                submitButton.disabled = true;
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
+                
+                const response = await fetch(FORM_ENDPOINT, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                    showMessage('Спасибо! Ваш отзыв успешно отправлен.', 'success');
+                    feedbackForm.reset();
+                    
+                    // Сбрасываем звезды рейтинга
+                    feedbackForm.querySelectorAll('input[name="rating"]').forEach(radio => {
+                        radio.checked = false;
+                    });
+                } else {
+                    throw new Error('Ошибка отправки');
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                showMessage('Произошла ошибка при отправке. Попробуйте еще раз.', 'error');
+            } finally {
+                const submitButton = feedbackForm.querySelector('.submit-button');
+                submitButton.disabled = false;
+                submitButton.innerHTML = '<i class="fas fa-paper-plane"></i> Отправить отзыв';
+                
+                // Автоматически скрываем сообщение через 5 секунд
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 5000);
+            }
+        });
+        
+        function showMessage(text, type) {
+            formMessage.textContent = text;
+            formMessage.className = 'form-message ' + type;
+            formMessage.style.display = 'block';
+        }
+        
+        // Анимация появления формы
+        const formObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        formObserver.observe(document.querySelector('.feedback-form'));
+
+    </script>
+      <!-- Сюда можно добавить другие скрипты -->
+  
+  <!-- JavaScript для бургер-меню -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const navbarMenu = document.querySelector('.navbar-menu');
+      const body = document.body;
+      
+      if (mobileMenuToggle) {
+          mobileMenuToggle.addEventListener('click', function() {
+              this.classList.toggle('active');
+              navbarMenu.classList.toggle('active');
+              body.classList.toggle('menu-open');
+              
+              if (body.classList.contains('menu-open')) {
+                  body.style.overflow = 'hidden';
+              } else {
+                  body.style.overflow = '';
+              }
+          });
+      }
+      
+      const navLinks = document.querySelectorAll('.navbar-menu a');
+      navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              if (mobileMenuToggle) {
+                  mobileMenuToggle.classList.remove('active');
+                  navbarMenu.classList.remove('active');
+                  body.classList.remove('menu-open');
+                  body.style.overflow = '';
+              }
+          });
+      });
+      
+      window.addEventListener('resize', () => {
+          if (window.innerWidth > 900 && mobileMenuToggle) {
+              mobileMenuToggle.classList.remove('active');
+              navbarMenu.classList.remove('active');
+              body.classList.remove('menu-open');
+              body.style.overflow = '';
+          }
+      });
+      
+      window.addEventListener('scroll', function() {
+          const navbar = document.querySelector('.navbar');
+          if (window.scrollY > 50) {
+              navbar.classList.add('scrolled');
+          } else {
+              navbar.classList.remove('scrolled');
+          }
+      });
+  });
+  </script>
+</body>
+</html>
